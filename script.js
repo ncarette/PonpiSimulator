@@ -11,12 +11,13 @@ function randomize(){
 	let hb2 = [" anniversaire", " anni", " Geburtstag", " birthday", " B.", " annif"," B-day", " днем рождения"];
 	let nom = [" Ponpi", " Pénélope", " Péné", " Loop", " Pomp", " la meuf à Ulysse", " Пенелопа", " Pompi"];
 	let photos = ["empty.jpg"];
-	let font = ["Aldrich","Arial"]
+	let font = ["Aldrich","Arial", "Georgia", "Trebuchet MS", "Courier New", "Brush Script MT"]
+	let color = ["black", "gold", "pink", "green", "red", "blue","orange", "purple"]
 
     let fullWidth = window.innerWidth;
     let fullHeight = window.innerHeight;
 
-    let text = hb1[1] + hb2[1] + nom[1];
+    let text = hb1[hb1.length * Math.random() | 0] + hb2[hb2.length * Math.random() | 0] + nom[nom.length * Math.random() | 0];
 
     let elem = document.createElement("div");
     elem.textContent = text;
@@ -24,7 +25,8 @@ function randomize(){
     elem.style.left = (Math.round(Math.random() * fullWidth)-30) + "px";
     elem.style.top = (Math.round(Math.random() * fullHeight)-30) + "px";
     elem.style.fontSize = (Math.round(Math.random() * 30) + 10) + "pt";
-    elem.style.fontFamily = font[1]
+    elem.style.fontFamily = font[font.length * Math.random() | 0]
+    elem.style.color = color[color.length * Math.random() | 0]
 
     document.body.appendChild(elem);
 
