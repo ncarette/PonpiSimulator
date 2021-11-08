@@ -2,36 +2,35 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - ponpisimulator</title>
-  
+  <title>PonpiSimulator</title>
+  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+  <style>
+  p {
+    font-family: 'Aldrich';
+    font-size: 40px;
+    color: gold;
+    text-shadow: 2px 2px black;
+    text-align: center;
+  }
+  div {
+    color: black;
+  }
+  </style>
 
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<head>
-<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
-<style>
-p {
-    font-family: 'Aldrich';font-size: 22px;
-  font-size: 40px;
-  color: gold;
-  text-shadow: 2px 2px black;
-}
-ul {font-family: 'Aldrich';font-size: 22px;
-  font-size: 50px;
-  color: gris;
-  text-shadow: 2px 2px gold;
-  line-height: 130%
-  }
-</style>
-</head>
+
+<audio controls autoplay loop>
+    <source src="penelope.mp3" type="audio/mp3">
+    <embed src="penelope.mp3" autostart="true" loop="true" hidden="true"> 
+</audio>
+
 <p>The Ponpi Birthday Wishes Simulator</p>
 
-Click to simulate : 
-    <input type="button" id="button" value=":')">
-    <ul id="résultat"></ul>
-<!-- partial -->
-  <script  src="./script.js"></script>
+<p style="color:black; text-shadow: 2px 2px gold; font-size:35px;">Just click anywhere</p>
+
+<!-- documents externes -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js'></script>
+  <script src="./script.js"></script>
 
 </body>
 </html>
