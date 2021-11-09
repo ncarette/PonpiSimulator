@@ -25,7 +25,7 @@ function randomize(){
     let elem = document.createElement("div");
     elem.textContent = text;
     elem.style.position = "absolute";
-    elem.style.left = (Math.round(Math.random() * fullWidth)-400) + "px";
+    elem.style.left = Math.abs((Math.round(Math.random() * fullWidth)-400)) + "px";
     elem.style.top = (Math.round(Math.random() * fullHeight)-50) + "px";
     elem.style.fontSize = (Math.round(Math.random() * 40) + 20) + "pt";
     elem.style.fontFamily = font[font.length * Math.random() | 0];
