@@ -12,7 +12,9 @@ function randomize(){
 	let color = ["black", "gold", "pink", "green", "red","orange", "purple","fuchsia","lime","aqua",
 		"navy","teal","maroon","gray","hotpink","lawngreen","indigo","lightpink","mediumpurple",
 		"olivedrab","yellow","orangered","palegreen","paleturquoise","palevioletred","peru","royalblue",
-		"seagreen","tomato","black","black","yellowgreen"]
+		"seagreen","tomato","black","black","yellowgreen","aquamarine","blue","cadetblue","blueviolet","chartreuse",
+		"cornflowerblue","burlywood","chocolate","cyan","crimson","darkolivegreen","darkred","darksalmon",
+		"darkslategrey","dodgerblue","firebrick","lightslategrey"]
 	let texttransform = ["uppercase", "lowercase", "lowercase"]
 
     let fullWidth = window.innerWidth;
@@ -23,7 +25,7 @@ function randomize(){
     let elem = document.createElement("div");
     elem.textContent = text;
     elem.style.position = "absolute";
-    elem.style.left = (Math.round(Math.random() * fullWidth)-50) + "px";
+    elem.style.left = (Math.round(Math.random() * fullWidth)-400) + "px";
     elem.style.top = (Math.round(Math.random() * fullHeight)-50) + "px";
     elem.style.fontSize = (Math.round(Math.random() * 40) + 20) + "pt";
     elem.style.fontFamily = font[font.length * Math.random() | 0];
